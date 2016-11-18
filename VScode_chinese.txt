@@ -1,0 +1,13 @@
+关于VScode中文支持的配置修改：
+打开File->Preferences->Usersettings
+ 在右侧settings.json中添加下面内容
+ "files.encoding": "shiftjis",
+ "files.encoding": "eucjp",
+ "files.encoding": "big5hkscs",
+ "files.encoding": "Big5",
+ "files.encoding": "GB18030",
+ "files.encoding": "GBK",
+ "files.encoding": "utf8",
+ "files.encoding": "GB2312",
+ 这样支持这样几种编码方式，最下面的就是默认的，
+ 这个默认支持GB2312,还需要其他编码可以自己按需要添加
