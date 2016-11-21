@@ -1,0 +1,44 @@
+code.page
+output.code.page	 
+
+To support a DBCS language such as Japanese, a code page can be set here. This ensures that double byte characters are always treated as a unit so the caret is never located between the two bytes of a double byte character.
+
+Code page								Value
+Default (single byte character set)		0
+UTF-8									65001
+Japanese Shift-JIS						932
+Simplified Chinese GBK					936
+Korean Wansung							949
+Traditional Chinese Big5				950
+Korean Johab							1361
+
+Setting code.page to 65001 starts Unicode mode and the document is treated as a sequence of characters expressed as UTF-8. Display is performed by converting to the platform's normal Unicode encoding first so characters from any language will be displayed. Correct glyphs may only be displayed if fonts are chosen that contain the appropriate glyphs. The Tahoma font contains a wide range of glyphs so may be a good choice. 
+This property can not set a single byte character set.
+If output.code.page is set then it is used for the output pane which otherwise matches the edit pane.
+
+===================================================
+
+character.set	 
+
+This setting allows changing the character set that is asked for when setting up fonts. Not all of the values will work on all platforms.
+
+Character set	Value
+Default	0
+Japanese			128
+Chinese GB2312		134
+Chinese BIG5		136
+Korean				129
+Greek				161
+Eastern European	238
+Baltic				186
+Turkish				162
+Hebrew				177
+Arabic				178
+Thai				222
+Vietnamese			163
+Cyrillic (CP866 on GTK+)						866
+Cyrillic (CP1251 on Windows, KOI8-R on GTK+)	204
+Cyrillic (CP1251 on GTK+)						1251
+European with Euro (ISO 8859-15)				1000
+
+All of these values except for 1251 and 1000 should work on OS X or Windows. On GTK+ Baltic, Turkish, Thai and Vietnamese will probably not work.
