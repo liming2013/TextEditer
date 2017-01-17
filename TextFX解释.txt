@@ -1,0 +1,40 @@
+Notepad++之TextFX插件的常用命令
+1. 为代码增加行号 
+选择要增加行号的文本(选择时会提示“No text selected”)
+点击TextFX —> TextFX Tools —> Insert Line Numbers
+2. 删除程序行号或者首字 
+选择相应的文本
+点击TextFX —> TextFX Tools —> Delete Line Numbers or First word
+3. 删除程序空行 
+选择相应的文本
+点击TextFX —> TextFX Edit —> Delete Blank Lines
+点击TextFX —> TextFX Edit —> Delete Surplus Blank Lines
+4. 改变字符大小写
+选择相应的文本
+点击TextFX —> TextFX Characters, 可以选择如下几种形式：
+UPPER CASE 全部大写
+lower case 全部小写
+Proper Case 首字大写
+Sentense case 句子模式
+iNVERT cASE 首字小写，其他大写
+5. 整行移动
+选择要移动的一行，按Ctrl+Shift+上箭头，或者Ctrl+Shift+下箭头
+6. 整理xml文本格式。 
+这个功能不错，可以很快将一行文本整理成规范的xml文件。(这个功能用来处理blogger的xml文档很不错，我自己的文档经过无数次的编辑已经乱得不成样子，经过这样一整理，可读性大大提高。)
+选中所有文本
+点击TextFX—>HTML Tidy—>Tidy: Reindent XML
+同样在处理HTML文件，也有类似功能。
+7. 转换为HTML实体。 
+即把“<”转换成“&lt;”、把“>”转换成 “&gt;”。（可以用来轻松为blogger的文章插入代码。）
+选择相应的文本
+点击TextFX —> TextFX Convert —> Encode HTML (&<>")
+8 去掉文本中的HTML元素 
+选择HTML元素 
+点击TextFX —> TextFX Convert —> Strip HTML tags table tabs
+9.其他
+TextFX Convert -> Encode URI Component: 转换选中文字中的标点符号成16进制，让其对URL友好。 
+TextFX Convert -> Encode HTML (&<>”): 将HTML文件中的尖角符号转换成16进制。 
+TextFX HTML Tidy -> Tidy Reindent XML: 将未格式化的xml文件按照规格缩进。（很实用的说） 
+TextFX Tools -> Sort lines case sensitive, Sort lines case insensitive: 排序。 
+TextFX Tools -> Insert Line Numbers: 为选中的文字加上行号，基于此文件的第一行排序。 
+TextFX Tools -> Word Count: 对选中的文字记数，包括详细的文字总数，行数等等。 

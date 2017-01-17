@@ -1,0 +1,33 @@
+^.*ofex.*\r?\n
+^.*ofed.*\r?\n
+^.*ofrd.*\r?\n
+^.*ofrx.*\r?\n
+^.*ofvy.*\r?\n
+
+^.*\?\?.*\r?\n
+
+查找：
+^.*大师兄.*$
+替换为：（空）
+
+如果不留空行：
+查找：
+^.*大师兄.*\r?\n
+
+注意：
+Notepad++的[全部替换]受[方向]约束，所以如果想“向下”全部替换，要把光标放到文首。
+
+#词库来源：小鹤双拼飞扬版——手心小鹤的挂接词库
+name=鹤形
+key=abcdefghijklmnopqrstuvwxyz
+len=4
+pull=*
+wildcard=?
+#自动上屏
+commit=0 0 0
+#auto_clear=4
+#编码提示
+hint=1
+#工作分词库，自己定义
+dicts=mb/work.txt
+assist=* mb/hed.txt
